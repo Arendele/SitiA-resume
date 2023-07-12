@@ -1,0 +1,383 @@
+:root{
+    color: cornflowerblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: beige;
+}
+.heading span{
+    color: cornflowerblue;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: midnightblue;
+    color: beige;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background-color: cornflowerblue;
+}
+header{
+    position: fixed;
+    top: 0; left:0; right: 0;
+    background-color: beige;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+header .logo{
+    font-size: 3rem;
+    color: cornflowerblue;
+    font-weight: bolder;
+}
+header .logo span{
+    color: midnightblue;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: midnightblue;
+}
+header .navbar a:hover{
+    color: cornflowerblue;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(pictures/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: black;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: midnightblue;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color: black;
+    padding: 1rem 0;
+    line-height: 1.2;
+}
+.home .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+    margin-left: 15rem;
+}
+.home .video-container video{
+    width: 40%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .image-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .image-container img{
+    width: 45%;
+    border: 1.5rem solid midnightblue;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+}
+.about .row .content{
+    flex: 2 2 50rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    margin-top: -15rem;
+    margin-left: -15rem;
+    color: midnightblue;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    margin-left: -15rem;
+    line-height: -1rem;
+    margin-top: 0.5rem;
+    text-transform: none;
+    color: black;
+}
+.about .row .personal div{
+    font-size: 1.3rem;
+    margin-left: -15rem;
+    margin-top: 1rem;
+    line-height: -1rem;
+    color: black;
+}
+.about .row .personal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.6rem 1.25rem;;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+.education-container{
+    background: beige;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: flex;
+    gap: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.education-container .icons{
+    background: white;
+    border: 1rem solid midnightblue;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.education-container .icons a{
+    height: 5rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    color: black;
+}
+.education-container .icons h3{
+    color: black;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.education-container .icons span{
+    color: rgb(46, 42, 42);
+    font-size: 1.3rem;
+}
+#skills{
+    width: 100%;
+    height: auto;
+    padding: 3rem 2rem;
+}
+.skill-head{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.skill-head h2{
+    margin-top: 0.5rem;
+    font-size: 3.5rem;
+}
+.skill-head h2 span{
+    color: black;
+}
+.skill-main{
+    display: grid;
+    margin-left: 35rem;
+    grid-template-columns: repeat(2, 30rem);
+    grid-column-gap: 2rem ;
+    grid-row-gap: 0.5rem;
+}
+.skill-main .skill-bar .info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+.skill-bar .info .add {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+.skill-bar .info .percent {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+.skill-bar .bar .html{
+    width: 95%;
+    animation: html 3s;    
+}
+.skill-bar .bar .css{
+    width: 80%;
+    animation: html 3s;    
+}
+.skill-bar .bar .powerpoint{
+    width: 95%;
+    animation: html 3s;    
+}
+.skill-bar .bar .english{
+    width: 85%;
+    animation: html 3s;    
+}
+.skill-bar .bar .bm{
+    width: 100%;
+    animation: html 3s;    
+}
+.skill-bar .bar{
+    width: 100%;
+    height: 1.5rem;
+    position: relative;
+    background-color: rgb(117, 112, 112);
+    border-radius: 1.5rem;
+    margin-top: 0.3rem;
+}
+.skill-bar .bar span{
+    width: 50%;
+    height: 1.5rem;
+    position: absolute;
+    background-color: midnightblue;
+    border-radius: 1.5rem;
+}
+.experience .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.experience .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 3rem 2rem;
+    position: relative;
+}
+.experience .box-container .box .fa-comment-heart{
+    position: absolute;
+    bottom: 1rem; right: 1rem;
+    font-size: 3rem;
+    color: rgb(150, 187, 255);
+}
+.experience .box-container .box .circle i{
+    color: cornflowerblue;
+    font-size: 2rem;
+}
+.experience .box-container .box p{
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-top: 2rem;
+
+}
+.experience .box-container .box .user{
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+}
+.experience .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.experience .box-container .box .user h3{
+    font-size: 2rem;
+    color: black;
+}
+.experience .box-container .box .user span{
+    font-size: 1.5rem;
+    color: midnightblue;
+}
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    flex: 0.5 0.5 35rem;
+    padding: 1rem 1.5rem;
+    box-shadow: 1rem 1.5rem  rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: .5rem;
+}
+.contact .row .image{
+    flex: 1 1 40rem;
+}
+.contact .row .image img{
+    width: 100%;
+}
+.contact .row form .box{
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: black;
+    text-transform: none;
+    border: 1rem solid rgb(41, 41, 41);
+    box-shadow: 0.5rem 0.7rem  rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    margin: .7rem 0;
+}
+.contact .row form .box:focus{
+    border-color: midnightblue;
+}
+.contact .row form textarea{
+    height: 15rem;
+    resize: none;
+}
+.footer .box-container{
+    gap: 1.5rem;
+    text-align: center;
+}
+.footer .box-container .box h3{
+    color: black;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 8rem;
+    margin-bottom: 0.5rem;
+}
+.footer .box-container .box a{
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.footer .box-container .box a:hover{
+    color: cornflowerblue;
+}
+.footer .copyright{
+    color: midnightblue;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    color: midnightblue;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+
+
